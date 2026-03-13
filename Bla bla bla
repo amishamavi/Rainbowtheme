@@ -1,0 +1,585 @@
+<!-- rainbow theme (for tumblr) by negg.tumblr.com / nenrikido.neocities.org -->
+<html>
+    <head>
+        <title>{Title}</title>
+        <link rel="shortcut icon" href="{image:Favicon}">
+        <link rel="alternate" type="application/rss+xml" href="{RSS}">
+        {block:Description}
+            <meta name="description" content="{MetaDescription}" />
+        {/block:Description}
+        
+        <link rel="stylesheet" href="https://static.tumblr.com/wqgcz53/ld7s5ojfx/normalize.css">
+    </head>
+    
+    <meta name="image:Sidebar image" content=""/>
+    <meta name="image:Background image" content=""/>
+    <meta name="image:Permalink" content=""/>
+    <meta name="image:Favicon" content="">
+    <meta name="image:Badge 1" content=""/>
+    <meta name="image:Badge 2" content=""/>
+    <meta name="image:Badge 3" content=""/>
+    <meta name="image:Badge 4" content=""/>
+
+    <meta name="color:Background" content="#fff"/>
+    <meta name="color:Post background color" content="#fff"/>
+
+    <meta name="text:Title font size" content="7"/>
+    <meta name="text:Link 1 Title" content="Link 1"/>
+    <meta name="text:Link 1 URL" content="" />
+    <meta name="text:Link 2 Title" content="Link 2"/>
+    <meta name="text:Link 2 URL" content="" />
+    <meta name="text:Link 3 Title" content="Link 3"/>
+    <meta name="text:Link 3 URL" content="" />
+    <meta name="text:Link 4 Title" content="Link 4"/>
+    <meta name="text:Link 4 URL" content="" />
+    <meta name="text:Link 5 Title" content="Link 5"/>
+    <meta name="text:Link 5 URL" content="" />
+    <meta name="text:Song URL" content="https://dl.dropbox.com/s/upv9nfvx2b9gfpo/ifeellove.mp3?dl=0"/>
+    
+    <meta name="if:Jukebox" content="" />
+    <meta name="if:Show Captions" content="1" />
+    <meta name="if:Show Tags" content="1" />
+    <meta name="if:Badges" content="" />
+    <meta name="if:Link 4" content="" />
+    <meta name="if:Link 5" content="" />
+
+<style type="text/css">
+
+:root,
+:root.red {
+    --main: #d92f38;
+    --muted: #d92f38b0;
+}
+
+:root.hotpink {
+    --main: #cf3480;
+    --muted: #cf347fbd;
+}
+
+:root.orange {
+    --main: #f8601a;
+    --muted: #f76e2ec5;
+}
+
+:root.yellow {
+    --main: #dfa505;
+    --muted: #e9da68d7;
+}
+
+:root.green {
+    --main: #439d81;
+    --muted: #439d81c0;
+}
+
+:root.turquoise {
+    --main: #0e8ea5;
+    --muted: #0fa8c3c5;
+}
+
+:root.indigo {
+    --main: #0269a4;
+    --muted: #0269a4ce;
+}
+
+:root.violet {
+    --main: #533664;
+    --muted: #3e254db9;
+}
+
+
+@font-face {
+    font-family: Pretty Kelly;
+    src: url(https://static.tumblr.com/wqgcz53/hfGs5ojja/prettykelly.ttf);
+}    
+
+@font-face {
+    font-family: National Park;
+    src: url(https://static.tumblr.com/wqgcz53/Yjps5owpq/nationalpark-regular.otf);
+}
+
+
+/* THEME SWITCHER */
+#flag {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0.5em auto;
+}
+
+.theme-button {
+    height: 1.2em;
+    border: none;
+}
+
+#hotpink { background-color: #cf3480; }
+
+#red { background-color: #d92f38; }
+
+#orange { background-color: #f76d2e; }
+
+#yellow { background-color: #e9d968; }
+
+#green { background-color: #439d81; }
+
+#turquoise { background-color: #0fa9c3; }
+
+#indigo { background-color: #0269a4; }
+
+#violet { background-color: #3e254d; }
+
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    background: url('{image:Background image}') top / cover no-repeat;
+    background-color: {color:Background};
+    font-family: National Park, sans-serif;
+    color: var(--main);
+    font-size: 0.95em;
+}
+
+blockquote {
+    border-left: 1px solid var(--main);
+    padding-left: 0.5em;
+    margin-left: 1em;
+    min-width: 90%;
+}
+
+button {
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+
+button:hover, button.active {
+    filter: brightness(140%);
+}
+
+a {
+    color: var(--main);
+}
+
+ul {
+    margin: 0;
+}
+
+hr {
+    border: 1px solid var(--muted);
+}
+
+code {
+    background-color: var(--main);
+    color: var(--background);
+    padding: 0 3px;
+    border-radius: 3px;
+}
+
+p {
+    margin: 5px 0 10px 5px;
+}
+
+h1, h2, h3, h4, h5, h6, .title {
+    margin: 0.2em;
+    font-family: Pretty Kelly;
+}
+
+.title {
+    font-size: 2em;
+}
+
+::selection {
+    background-color: var(--muted);
+    color: var(--background);
+}
+
+.permalink {
+    max-height: 1em;
+}
+
+audio,
+audio::-webkit-media-controls-panel {
+    max-width: 100%;
+    background-color: var(--main);
+    filter: brightness(120%);
+    border-radius: 30px;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	position: fixed;
+	right: 12px;
+	z-index: 1;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: 0;
+	border-radius: 0px;
+	background-color: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--muted);
+	border-radius: 0px;
+}
+
+/* WRAPPERS */
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    margin: 0 auto 5vh auto;
+    width: 775px;
+    padding: 15px;
+    gap: 2em;
+}
+
+.side-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 2em;
+}
+
+/* POSTS & SIDEBAR */
+.side-wrapper>div, .post, #footer {
+    background-color: {color:Post background color}; 
+    opacity: 0.9;
+    border: 2px solid var(--main);
+    box-shadow: 0.5em 0.5em var(--muted);
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.post {
+    max-width: 500px;
+    margin: 0 auto 2.5em auto;
+}
+
+.post img {
+    max-width: 100%;
+}
+
+.post-footer {
+     text-align: center;
+     padding: 0.75em 0;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.side p {
+    text-align: center;
+    margin: 0.5em;
+}
+
+#side-img {
+    height: 11em;
+    max-width: 100%;
+    background:  url('{image:Sidebar image}')  center / contain no-repeat;
+    margin: 0.5em auto;
+}
+
+/* NAVLINKS */
+#navlinks {
+    color: {color:Post background color};
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+#navlinks a {
+    background-color: var(--main);
+    color: var(--background);
+    padding: 8px;
+    margin: 5px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* MUSIC */
+.audio-player {
+  display: flex;
+  align-items: stretch;
+  border: 2px solid var(--main);
+}
+
+.album-art {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.album-art img {
+    display: block;
+    height: 6em;
+    border-right: 2px solid var(--main);
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 33px;
+  height: 30px;
+  overflow:hidden;
+}
+
+.song-info {
+  background-color: var(--muted);
+  color: {color:Post background color};
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.song-title {
+ padding: 1em;   
+}
+
+
+/* PAGE TITLE */
+ul#title {
+    padding-left: 0;
+    margin: 0 auto;
+    max-width: 75vw;
+    font-size: {text:Title font size}em;
+    flex-wrap: wrap;
+    display: flex;
+    flex: auto 1 1;
+    justify-content: center;
+    font-family: Pretty Kelly;
+    -webkit-text-stroke: 1px var(--main);
+}
+
+#title li {
+    display: inline-flex;
+    margin: 0.25em;
+    background-size: 200vw auto;
+    background-image: repeating-linear-gradient(to right, #cf3480, #d92f38, #f76d2e, #e9d968, #439d81, #0fa9c3, #3e254d);
+    -webkit-animation: rainbow 10s linear reverse infinite;
+    animation: rainbow 10s linear reverse infinite;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; 
+}
+
+#title li:nth-child(3n) { transform: rotate(20deg); }
+#title li:nth-child(3n + 1) { transform: rotate(-20deg); }
+#title li:nth-child(3n + 2) { transform: rotate(10deg); }
+
+@keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@-webkit-keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* BADGES */
+#badge-img {
+    display: grid;
+    grid-template-columns: repeat(2, 88px);
+    gap: 6px; 
+    justify-content: center; 
+    margin: 0 auto; 
+}
+
+/* FOOTER */
+#footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#credit {
+    text-decoration: none;
+}
+</style>    
+    
+<body>
+
+<a href="/" style="text-decoration:none;"><ul id="title">{Title}</ul></a>
+    <div class="wrapper">
+        <div class="main">  
+               
+{block:Posts}
+    <div class="post">
+
+{block:Text}
+    {block:Title}<div class="title">{Title}</div>{/block:Title}
+    {Body}
+{/block:Text}
+
+{block:Photo}
+    {linkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>{linkCloseTag}
+    {block:IfShowCaptions}{block:Caption}{Caption}{/block:Caption}{/block:IfShowCaptions}
+{/block:Photo}
+
+{block:Photoset}
+    {Photoset-500}
+    {block:IfShowCaptions}{block:Caption}{Caption}{/block:Caption}{/block:IfShowCaptions}
+{/block:Photoset}
+
+{block:Quote}
+    <div class="quote">"{Quote}"</div>
+    {block:Source}
+    <div class="quotesource">{Source}</div>
+    {/block:Source}
+{/block:Quote}
+
+{block:link}
+    <div class="title"><a href="{URL}">{Name}</a></div>
+    {block:Description}
+    {Description}
+    {/block:Description}
+{/block:link}
+
+{block:Chat}
+    {block:Title}
+    <div class="title">{Title}</div>
+    {/block:Title}
+    {block:Lines}
+    <div class="{Alt} user_{UserNumber}">
+    {block:Label}
+    <b>{Label}</b>{/block:Label}
+    &nbsp;{Line}
+    </div>
+    {/block:Lines}
+{/block:Chat}
+
+{block:Video}
+    {Video-500}
+    {block:IfShowCaptions}{block:Caption}{Caption}{/block:Caption}{/block:IfShowCaptions}
+{/block:Video}
+
+{block:Audio}
+    {block:AudioPlayer}
+    <div class="audio-player">
+      <div class="album-art">{block:AlbumArt}<img src="{AlbumArtURL}" alt="Album Art">{/block:AlbumArt}
+        <div class="play-button">{AudioPlayerWhite}</div>
+      </div>
+      <div class="song-info">
+        <div class="song-title">
+          {block:TrackName}<i>{TrackName}</i>{/block:TrackName}<br>
+          {block:Artist}{Artist}{/block:Artist}<br>
+          {block:Album}{Album}{/block:Album}
+        </div>
+      </div>
+    </div>
+    {block:IfShowCaptions}{block:Caption}{Caption}{/block:Caption}{/block:IfShowCaptions}
+    {/block:AudioPlayer}
+{/block:Audio}
+
+                
+{block:Answer}{Asker} asked: {Question}<br> <br>{Answer}{/block:Answer}
+
+{block:Indexpage}
+    <div class="post-footer">
+        <a href="{Permalink}">{block:NoteCount} {NoteCountWithLabel}{/block:NoteCount}</a>&nbsp; 
+        <img class="permalink" src="{image:permalink}"/>&nbsp;  
+        {block:Date}<a href="{Permalink}">{ShortMonth} {DayOfMonth}, {Year}</a>{/block:Date}
+        {block:IfShowTags}
+        {block:HasTags}<br></text>{block:Tags}#<a href="{TagURL}">{Tag}</a> {/block:Tags}{/block:HasTags}
+        {/block:IfShowTags}
+    </div>
+{/block:Indexpage}
+
+
+{block:PermalinkPage}
+    {block:Date} Posted on {ShortDayOfWeek}. {Month} {DayOfMonth}, {Year} at {12Hour}:{Minutes}{CapitalAmPm} with {NoteCountWithLabel}{/block:Date} 
+    {block:HasTags}<br></text>Tagged as {block:Tags}#<a href="{TagURL}">{Tag}</a> {/block:Tags}{/block:HasTags}
+    {block:NoteCount}{block:PostNotes}{PostNotes}{/block:PostNotes}{/block:NoteCount}
+    {/block:PermalinkPage}
+</div>
+{/block:Posts}
+
+{block:Indexpage}
+ <div id="footer">
+    {block:PreviousPage}<a href="{PreviousPage}">&larr; Previous</a>{/block:PreviousPage}
+    <a id="credit" href="http://negg.tumblr.com/" title="Rainbow Theme">🌈</a> 
+    {block:NextPage}<a href="{NextPage}">Next &rarr;</a>{/block:NextPage}
+        </div>
+          {/block:Indexpage}
+  </div>
+        {block:Indexpage}
+ <div class="side-wrapper">
+            <div class="side">
+                <h1>Navigation</h1>
+                <div id="side-img"></div>
+                  <p> {Description} </p>
+                <div id="navlinks"> 
+                <a href="{text:Link 1 URL}">{text:Link 1 Title}</a>
+                <a href="{text:Link 2 URL}">{text:Link 2 Title}</a>
+                <a href="{text:Link 3 URL}">{text:Link 3 Title}</a>
+                {block:IfLink4}<a href="{text:Link 4 URL}">{text:Link 4 Title}</a>{/block:IfLink4}
+                {block:IfLink5}<a href="{text:Link 5 URL}">{text:Link 5 Title}</a>{/block:IfLink5}
+                </div>
+            </div>
+            <div id="theme">
+                <h1>Theme</h1>
+                <p>Click a flag stripe.</p>
+                <div id="flag"> <button id="hotpink" title="hot pink (sex)" class="theme-button" onclick="handleThemeButtonClick('hotpink', this)"></button> <button id="red" title="red (life)" class="theme-button" onclick="handleThemeButtonClick('red', this)"></button> <button id="orange" title="orange (healing)" class="theme-button" onclick="handleThemeButtonClick('orange', this)"></button> <button id="yellow" title="yellow (sunlight)" class="theme-button" onclick="handleThemeButtonClick('yellow', this)"></button> <button id="green" title="green (nature)" class="theme-button" onclick="handleThemeButtonClick('green', this)"></button> <button id="turquoise" title="turquoise (magic/art)" class="theme-button" onclick="handleThemeButtonClick('turquoise', this)"></button> <button id="indigo" title="indigo (serenity)" class="theme-button" onclick="handleThemeButtonClick('indigo', this)"></button> <button id="violet" title="violet (spirit)" class="theme-button" onclick="handleThemeButtonClick('violet', this)"></button> </div>
+            </div>
+            
+            {block:IfJukebox}
+            <div id="audio">
+                <h1>Jukebox</h1> <audio controls> 
+                    <source src="{text:Song URL}" type="audio/mp3">
+                </audio>
+            </div>
+            {/block:IfJukebox}
+            
+               {block:IfBadges}
+             <div id="badges">  
+                <h1>Badges</h1>
+                <div id="badge-img"> 
+                    <img src="{image:Badge 1}"> 
+                    <img src="{image:Badge 2}"> 
+                    <img src="{image:Badge 3}"> 
+                    <img src="{image:Badge 4}"> 
+                    </div>
+                </div>
+            {/block:IfBadges}
+        </div>
+        {/block:Indexpage}
+    </div>     
+</body>
+     
+     
+     <script src="https://static.tumblr.com/wqgcz53/jzrs5oy9z/theme.js"></script>
+    
+ <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const titleElement = document.getElementById('title');
+        const titleText = titleElement.textContent.trim();
+        const letters = titleText.split('');
+
+        titleElement.textContent = '';
+
+        letters.forEach((letter, index) => {
+            const li = document.createElement('li');
+            li.textContent = letter;
+            titleElement.appendChild(li);
+        });
+    });
+    </script>
+</html>
